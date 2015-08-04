@@ -7,15 +7,6 @@
 
   /** @ngInject */
   function MainController() {
-    var self = this;
-
-    self.directives = [
-        {
-            name: "Hello World",
-            description: "The simplest directie. Put stuff on the page.",
-            url: "/"
-        }
-    ];
-
+      console.log("in the main controller");
   }
 })();
