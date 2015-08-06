@@ -1,24 +1,24 @@
 (function() {
   'use strict';
 
-  describe('directive:clickable', function(){
+  //describe('directive:clickable', function(){
+  //
+  //  var $compile, $rootScope;
+  //
+  //  beforeEach(module('playground'));
+  //
+  //  beforeEach(inject(function (_$compile_, _$rootScope_) {
+  //    $compile = _$compile_;
+  //    $rootScope = _$rootScope_;
+  //  }));
+  //
+  //
+  //  it('Replaces the HTML content correctly', function () {
+  //    var html = '<clickable></clickable>';
+  //    var element = $compile(html)($rootScope);
+  //    $rootScope.$digest();
+  //    expect(element.html()).toContain("Hello MidwestJS, I'm clickable");
+  //  });
 
-    var $compile, $rootScope;
-
-    beforeEach(module('playground'));
-
-    beforeEach(inject(function (_$compile_, _$rootScope_) {
-      $compile = _$compile_;
-      $rootScope = _$rootScope_;
-    }));
-
-
-    it('Replaces the HTML content correctly', function () {
-      var html = '<clickable></clickable>';
-      var element = $compile(html)($rootScope);
-      $rootScope.$digest();
-      expect(element.html()).toContain("Hello MidwestJS, I'm clickable");
-    });
-
-  });
+  //});
 })();

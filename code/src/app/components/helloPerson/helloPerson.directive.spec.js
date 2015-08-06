@@ -14,10 +14,10 @@
 
 
     it('Replaces the HTML content correctly', function () {
-      var html = '<hello-world-template></hello-world-template>';
+      var html = '<hello-person name="Jonny"></hello-person>';
       var element = $compile(html)($rootScope);
       $rootScope.$digest();
-      expect(element.html()).toContain("Hello MidwestJS, I'm in a template.");
+      expect(element.html()).toContain("Hello Jonny!!!");
     });
 
   });
