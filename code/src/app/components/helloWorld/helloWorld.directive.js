@@ -3,13 +3,11 @@
 
   angular
     .module('playground')
-    .directive('jonny', jonny);
-
-  var jonny = function () {
-    return {
-      restrict: 'E',
-      replace: true,
-      template: 'Hello World'
-    };
-  };
-});
+    .directive('helloWorld', function () {
+      return {
+        restrict: 'E',
+        replace: true,
+        template: '<p>Hello MidwestJS</p>'
+      };
+    });
+})();

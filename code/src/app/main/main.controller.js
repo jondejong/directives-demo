@@ -7,6 +7,5 @@
 
   /** @ngInject */
   function MainController() {
-      console.log("in the main controller");
   }
 })();

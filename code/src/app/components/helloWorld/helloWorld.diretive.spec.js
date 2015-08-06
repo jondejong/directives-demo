@@ -14,10 +14,10 @@
 
 
     it('Replaces the HTML content correctly', function () {
-      var html = '<jonny></jonny>';
+      var html = '<hello-world></hello-world>';
       var element = $compile(html)($rootScope);
       $rootScope.$digest();
-      expect(element.html()).toEqual('Hello World');
+      expect(element.html()).toEqual('Hello MidwestJS');
     });
 
   });
