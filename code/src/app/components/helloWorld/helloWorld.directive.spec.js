@@ -17,7 +17,7 @@
       var html = '<hello-world></hello-world>';
       var element = $compile(html)($rootScope);
       $rootScope.$digest();
-      expect(element.html()).toEqual('Hello MidwestJS');
+      expect(element.html()).toContain('Hello MidwestJS');
     });
 
   });

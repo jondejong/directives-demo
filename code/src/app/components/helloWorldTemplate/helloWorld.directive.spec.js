@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  describe('directive:helloWorld', function(){
+  describe('directive:helloWorldTemplate', function(){
 
     var $compile, $rootScope;
 
@@ -14,10 +14,10 @@
 
 
     it('Replaces the HTML content correctly', function () {
-      var html = '<hello-world></hello-world>';
+      var html = '<hello-world-template></hello-world-template>';
       var element = $compile(html)($rootScope);
       $rootScope.$digest();
-      expect(element.html()).toEqual('Hello MidwestJS');
+      expect(element.html()).toContain("Hello MidwestJS, I'm in a template.");
     });
 
   });
