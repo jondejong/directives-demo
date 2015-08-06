@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  describe('directive:helloWorldTemplate', function(){
+  describe('directive:helloPerson', function(){
 
     var $compile, $rootScope;
 

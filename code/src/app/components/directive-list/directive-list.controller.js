@@ -26,9 +26,9 @@
         url: "#/hellop"
       },
       {
-        name: "Other 3",
-        description: "some Other thing",
-        url: "#"
+        name: "Hello Scope",
+        description: "Scope some object from a controller",
+        url: "#/hellos"
       },
       {
         name: "Other 4",

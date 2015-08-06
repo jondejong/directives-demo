@@ -6,7 +6,6 @@
     .directive('helloWorldTemplate', function () {
       return {
         restrict: 'E',
-        replace: true,
         templateUrl: 'app/components/helloWorldTemplate/helloWorld.template.html'
       };
     });
