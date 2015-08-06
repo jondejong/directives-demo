@@ -3,20 +3,21 @@
 
   angular
     .module('playground')
-    .directive('clickable', clickable);
+    .directive('deferred', deferred);
 
-  function clickable () {
+  function deferred () {
     return {
       restrict: 'E',
       replace: true,
       templateUrl: 'app/components/clickable/clickable.template.html',
-      controller: ClickableController,
+      controller: DeferredController,
       controllerAs: 'ctrl',
       transclude: true
     };
 
     /** @ngInject */
-    function ClickableController() {
+    function DeferredController($q) {
+      console.log('q', $q);
       var self = this;
       self.count = 0;
 

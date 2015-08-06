@@ -29,7 +29,7 @@
         templateUrl: 'app/components/helloWorldTemplate/helloWorldContainer.html'
       })
       .state('home.deferred', {
-        url: 'deferred',
+          url: 'deferred',
         templateUrl: 'app/components/deferred/deferred.container.html'
       });
 

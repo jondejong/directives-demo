@@ -21,9 +21,9 @@
         url: "#/hellowt"
       },
       {
-        name: "Clickable",
-        description: "Use a controller to interact with the directive",
-        url: "#/clickable"
+        name: "Deferred",
+        description: "Use a controller to load data",
+        url: "#/deferred"
       },
       {
         name: "Other 3",
