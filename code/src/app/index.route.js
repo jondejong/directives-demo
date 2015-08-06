@@ -28,9 +28,9 @@
         url: 'hellowt',
         templateUrl: 'app/components/helloWorldTemplate/helloWorldContainer.html'
       })
-      .state('home.clickable', {
-        url: 'clickable',
-        templateUrl: 'app/components/clickable/clickable.container.html'
+      .state('home.deferred', {
+        url: 'deferred',
+        templateUrl: 'app/components/deferred/deferred.container.html'
       });
 
     $urlRouterProvider.otherwise('/list');
