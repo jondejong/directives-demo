@@ -9,22 +9,16 @@
     return {
       restrict: 'E',
       replace: true,
-      templateUrl: 'app/components/clickable/clickable.template.html',
+      templateUrl: 'app/components/deferred/deferred.template.html',
       controller: DeferredController,
       controllerAs: 'ctrl',
       transclude: true
     };
 
     /** @ngInject */
-    function DeferredController($q) {
-      console.log('q', $q);
+    function DeferredController() {
       var self = this;
       self.count = 0;
-
-      var buttonClick = function () {
-        console.log("BOOM")
-        self.count++;
-      }
     }
 
   };

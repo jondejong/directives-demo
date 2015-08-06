@@ -22,11 +22,15 @@
         })
       .state('home.hellow', {
           url: 'hellow',
-          templateUrl: 'app/components/helloWorld/helloWorldContainer.html'
+          templateUrl: 'app/components/helloWorld/helloWorld.container.html'
         })
       .state('home.hellowt', {
         url: 'hellowt',
-        templateUrl: 'app/components/helloWorldTemplate/helloWorldContainer.html'
+        templateUrl: 'app/components/helloWorldTemplate/helloWorld.container.html'
+      })
+      .state('home.hellop', {
+        url: 'hellop',
+        templateUrl: 'app/components/helloPerson/helloPerson.container.html'
       })
       .state('home.deferred', {
           url: 'deferred',

@@ -21,9 +21,9 @@
         url: "#/hellowt"
       },
       {
-        name: "Deferred",
-        description: "Use a controller to load data",
-        url: "#/deferred"
+        name: "Hello Person",
+        description: "Modify some data with scope",
+        url: "#/hellop"
       },
       {
         name: "Other 3",
