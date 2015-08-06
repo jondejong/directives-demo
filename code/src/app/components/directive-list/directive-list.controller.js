@@ -15,7 +15,7 @@
       {
         name: "Hello World",
         description: "The simplest directive. Put stuff on the page.",
-        url: "/"
+        url: "#/hellow"
       },
       {
         name: "Other 1",

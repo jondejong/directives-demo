@@ -19,6 +19,10 @@
           templateUrl: 'app/components/directive-list/directive-list.html',
           controller: 'DirectiveListController',
           controllerAs: 'ctrl'
+        })
+      .state('home.hellow', {
+          url: 'hellow',
+          templateUrl: 'app/components/helloWorld/helloWorldContainer.html'
         });
 
     $urlRouterProvider.otherwise('/list');
