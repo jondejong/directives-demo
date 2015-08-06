@@ -7,7 +7,7 @@
       return {
         restrict: 'E',
         replace: true,
-        templateUrl: 'app/components/helloWorldTemplate/helloWorld.directive.template.html'
+        templateUrl: 'app/components/helloWorldTemplate/helloWorld.template.html'
       };
     });
 })();

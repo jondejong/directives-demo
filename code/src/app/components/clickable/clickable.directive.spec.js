@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  describe('directive:helloWorldTemplate', function(){
+  describe('directive:clickable', function(){
 
     var $compile, $rootScope;
 
@@ -14,10 +14,10 @@
 
 
     it('Replaces the HTML content correctly', function () {
-      var html = '<hello-world-template></hello-world-template>';
+      var html = '<clickable></clickable>';
       var element = $compile(html)($rootScope);
       $rootScope.$digest();
-      expect(element.html()).toContain("Hello MidwestJS, I'm in a template.");
+      expect(element.html()).toContain("Hello MidwestJS, I'm clickable");
     });
 
   });

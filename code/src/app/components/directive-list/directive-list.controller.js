@@ -21,19 +21,34 @@
         url: "#/hellowt"
       },
       {
-        name: "Other 2",
-        description: "The simplest directive. Put stuff on the page.",
-        url: "/"
+        name: "Clickable",
+        description: "Use a controller to interact with the directive",
+        url: "#/clickable"
       },
       {
         name: "Other 3",
-        description: "The simplest directive. Put stuff on the page.",
-        url: "/"
+        description: "some Other thing",
+        url: "#"
       },
       {
         name: "Other 4",
-        description: "The simplest directive. Put stuff on the page.",
-        url: "/"
+        description: "some Other thing",
+        url: "#"
+      },
+      {
+        name: "Other 5",
+        description: "some Other thing",
+        url: "#"
+      },
+      {
+        name: "Other 6",
+        description: "some Other thing",
+        url: "#"
+      },
+      {
+        name: "Other 7",
+        description: "some Other thing",
+        url: "#"
       }
     ];
 

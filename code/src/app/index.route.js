@@ -27,6 +27,10 @@
       .state('home.hellowt', {
         url: 'hellowt',
         templateUrl: 'app/components/helloWorldTemplate/helloWorldContainer.html'
+      })
+      .state('home.clickable', {
+        url: 'clickable',
+        templateUrl: 'app/components/clickable/clickable.container.html'
       });
 
     $urlRouterProvider.otherwise('/list');
