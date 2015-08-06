@@ -9,8 +9,6 @@
   function DirectiveListController() {
     var self = this;
 
-    console.log("in the DirectiveListController controller");
-
     self.directives = [
       {
         name: "Hello World",
@@ -18,9 +16,9 @@
         url: "#/hellow"
       },
       {
-        name: "Other 1",
-        description: "The simplest directive. Put stuff on the page.",
-        url: "/"
+        name: "Hello World Template",
+        description: "Put stuff on the page, but from a template",
+        url: "#/hellowt"
       },
       {
         name: "Other 2",

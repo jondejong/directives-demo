@@ -23,7 +23,11 @@
       .state('home.hellow', {
           url: 'hellow',
           templateUrl: 'app/components/helloWorld/helloWorldContainer.html'
-        });
+        })
+      .state('home.hellowt', {
+        url: 'hellowt',
+        templateUrl: 'app/components/helloWorldTemplate/helloWorldContainer.html'
+      });
 
     $urlRouterProvider.otherwise('/list');
   }
