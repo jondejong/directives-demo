@@ -38,6 +38,12 @@
                 controller: 'HelloScopeController',
                 controllerAs: 'ctrl'
             })
+            .state('home.hellowho', {
+                url: 'hellowho',
+                templateUrl: 'app/components/helloWho/helloWho.container.html',
+                controller: 'HelloWhoController',
+                controllerAs: 'ctrl'
+            })
             .state('home.deferred', {
                 url: 'deferred',
                 templateUrl: 'app/components/deferred/deferred.container.html'

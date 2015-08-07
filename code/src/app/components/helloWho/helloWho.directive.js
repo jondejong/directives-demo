@@ -3,7 +3,7 @@
 
     angular
         .module('playground')
-        .directive('helloScope', function () {
+        .directive('helloWho', function () {
             return {
                 scope: {
                     person: "="

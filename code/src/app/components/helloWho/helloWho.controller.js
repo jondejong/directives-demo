@@ -3,15 +3,15 @@
 
     angular
         .module('playground')
-        .controller('HelloScopeController', HelloScopeController);
+        .controller('HelloWhoController', HelloWhoController);
 
     /** @ngInject */
-    function HelloScopeController() {
+    function HelloWhoController() {
         var self = this;
 
         self.person = {
-            firstName: "Arya",
-            lastName: "Stark"
+            firstName: '',
+            lastName: ''
         };
 
         return self;
