@@ -1,7 +1,20 @@
-<p ng-hide="{{person.firstName}}">
+<p ng-hide="{{speaking}}">
 <h4>Who are you?</h4></p>
-<p ng-hide="{{person.firstName}}">
+<p ng-hide="{{speaking}}">
 <h4>Hello {{person.firstName}} {{person.lastName}}!!!</h4>
 </p>
+<md-container>
+    <md-input-container>
+        <label>First Name</label>
+        <input type="text" ng-model="person.firstName">
+    </md-input-container>
+    <md-input-container>
+        <label>Last Name</label>
+        <input type="text" ng-model="person.lastName">
+    </md-input-container>
+    <md-button ng-hide="speaking" ng-click="sayHi()">Say Hi</md-button>
+    <md-button ng-show="speaking" ng-click="shutUp()">Shut Up</md-button>
+</md-container>
+
 
 

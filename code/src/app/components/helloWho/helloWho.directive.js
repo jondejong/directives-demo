@@ -5,13 +5,24 @@
         .module('playground')
         .directive('helloWho', function () {
             return {
-                scope: {
-                    person: "="
-                },
                 restrict: 'E',
                 templateUrl: 'app/components/helloScope/helloScope.template.html',
                 link: function (scope) {
-                    console.log("we have a person", scope.person);
+                    scope.speaking = false;
+                    scope.person = {
+                        firstName: '',
+                        lastName: ''
+                    };
+
+                    scope.sayHi = function () {
+                        scope.speaking = true;
+                    };
+
+                    scope.shutUp = function () {
+                        scope.person.firstName = '';
+                        scope.person.lastName = '';
+                        scope.speaking = false;
+                    }
                 }
             };
         });

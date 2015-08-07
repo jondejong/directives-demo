@@ -40,9 +40,7 @@
             })
             .state('home.hellowho', {
                 url: 'hellowho',
-                templateUrl: 'app/components/helloWho/helloWho.container.html',
-                controller: 'HelloWhoController',
-                controllerAs: 'ctrl'
+                templateUrl: 'app/components/helloWho/helloWho.container.html'
             })
             .state('home.deferred', {
                 url: 'deferred',
