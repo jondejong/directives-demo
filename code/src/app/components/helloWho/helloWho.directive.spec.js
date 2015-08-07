@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    describe('directive:helloScope', function () {
+    describe('directive:helloWho', function () {
 
         var $compile, scope;
 
@@ -9,21 +9,26 @@
 
         beforeEach(inject(function (_$compile_, _$rootScope_) {
             $compile = _$compile_;
-            scope = _$rootScope_.$new();
+            var html = '<hello-who></hello-who>';
+            var element = $compile(html)(_$rootScope_);
+            _$rootScope_.$digest();
+            scope = element.isolateScope()
         }));
 
-        it('Replaces the HTML content correctly', function () {
-            var html = '<hello-scope person="ctrl.person"></hello-scope>';
+        it('should set speaking to false', function () {
+            expect(scope.speaking).toBeFalsy();
+        });
 
-            scope.ctrl = {
-                person: {
-                    firstName: 'Jon', lastName: 'Snow'
-                }
-            };
+        it('should support saying hi', function () {
+            scope.speaking = false;
+            scope.sayHi();
+            expect(scope.speaking).toBeTruthy();
+        });
 
-            var element = $compile(html)(scope);
-            scope.$digest();
-            expect(element.html()).toContain("Hello Jon Snow!!!");
+        it('should support shutting up', function () {
+            scope.speaking = true;
+            scope.shutUp();
+            expect(scope.speaking).toBeFalsy();
         });
     });
 })();

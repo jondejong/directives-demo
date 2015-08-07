@@ -5,10 +5,10 @@
         .module('playground')
         .directive('helloWho', function () {
             return {
+                scope: {},
                 restrict: 'E',
                 templateUrl: 'app/components/helloWho/helloWho.template.html',
                 link: function (scope) {
-                    console.log('setting the things')
                     scope.speaking = false;
                     scope.person = {
                         firstName: '',
