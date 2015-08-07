@@ -1,8 +1,9 @@
-<p ng-hide="{{speaking}}">
-<h4>Who are you?</h4></p>
-<p ng-hide="{{speaking}}">
-<h4>Hello {{person.firstName}} {{person.lastName}}!!!</h4>
-</p>
+<div ng-hide="speaking">
+    <h4>Who are you?</h4>
+</div>
+<div ng-show="speaking">
+    <h4>Hello {{person.firstName}} {{person.lastName}}!!!</h4>
+</div>
 <md-container>
     <md-input-container>
         <label>First Name</label>

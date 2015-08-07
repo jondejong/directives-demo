@@ -6,8 +6,9 @@
         .directive('helloWho', function () {
             return {
                 restrict: 'E',
-                templateUrl: 'app/components/helloScope/helloScope.template.html',
+                templateUrl: 'app/components/helloWho/helloWho.template.html',
                 link: function (scope) {
+                    console.log('setting the things')
                     scope.speaking = false;
                     scope.person = {
                         firstName: '',
