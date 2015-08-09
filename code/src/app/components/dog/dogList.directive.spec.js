@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    fdescribe('directive:dogList', function () {
+      describe('directive:dogList', function () {
 
         var $compile, $rootScope, $q, element, DogService, mockPromise;
 
@@ -20,15 +20,13 @@
         }));
 
         var parseDirective = function() {
-            element = $compile("<dog-list></dog-list>")($rootScope);
-            $rootScope.$digest();
+          var scope = $rootScope.$new();
+          element = $compile("<dog-list></dog-list>")(scope);
+          scope.$digest();
         };
 
-        fit('Sets up a loading screen', function () {
-            //parseDirective();
-            var scope = $rootScope.$new();
-            element = $compile("<dog-list></dog-list>")(scope);
-            scope.$digest();
+        it('Sets up a loading screen', function () {
+            parseDirective();
 
             var divs = element.find('div');
             var firstDiv = angular.element(divs[0]);
