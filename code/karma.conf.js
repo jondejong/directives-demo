@@ -32,7 +32,7 @@ module.exports = function(config) {
 
     autoWatch: false,
 
-    frameworks: ['jasmine', 'angular-filesort'],
+    frameworks: ['jasmine-jquery', 'jasmine', 'angular-filesort'],
 
     angularFilesort: {
       whitelist: [path.join(conf.paths.src, '/**/!(*.html|*.spec|*.mock).js')]
@@ -46,6 +46,7 @@ module.exports = function(config) {
     browsers : ['PhantomJS'],
 
     plugins : [
+      'karma-jasmine-jquery',
       'karma-phantomjs-launcher',
       'karma-angular-filesort',
       'karma-jasmine',
