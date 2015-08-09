@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    describe('directive:helloPerson', function () {
+    describe('directive:helloAttr', function () {
 
         var $compile, $rootScope;
 
@@ -14,7 +14,7 @@
 
 
         it('Replaces the HTML content correctly', function () {
-            var html = '<hello-person name="Jonny"></hello-person>';
+            var html = '<div hello-attr="Jonny"></div>';
             var element = $compile(html)($rootScope);
             $rootScope.$digest();
             expect(element.html()).toContain("Hello Jonny!!!");

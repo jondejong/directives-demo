@@ -36,9 +36,9 @@
                 url: "#/hellowho"
             },
             {
-                name: "Other 5",
-                description: "some Other thing",
-                url: "#"
+                name: "Hello Attribute",
+                description: "A directive that can be and element or an attribute",
+                url: "#/helloa"
             },
             {
                 name: "Other 6",

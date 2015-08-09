@@ -3,10 +3,11 @@
 
     angular
         .module('playground')
-        .directive('helloPerson', function () {
+        .directive('helloAttr', function () {
             return {
-                restrict: 'E',
-                templateUrl: 'app/components/helloPerson/helloPerson.template.html',
+                scope: true,
+                restrict: 'AE',
+                templateUrl: 'app/components/helloAttr/helloAttr.template.html',
                 link: function (scope, el, attrs) {
                     scope.name = attrs.name;
                 }

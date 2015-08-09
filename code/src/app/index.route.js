@@ -42,6 +42,10 @@
                 url: 'hellowho',
                 templateUrl: 'app/components/helloWho/helloWho.container.html'
             })
+            .state('home.hellowa', {
+                url: 'helloa',
+                templateUrl: 'app/components/helloAttr/helloAttr.container.html'
+            })
             .state('home.deferred', {
                 url: 'deferred',
                 templateUrl: 'app/components/deferred/deferred.container.html'
