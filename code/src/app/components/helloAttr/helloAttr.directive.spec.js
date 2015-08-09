@@ -14,7 +14,7 @@
 
 
         it('Replaces the HTML content correctly', function () {
-            var html = '<div hello-attr="Jonny"></div>';
+            var html = '<div hello-attr name="Jonny"></div>';
             var element = $compile(html)($rootScope);
             $rootScope.$digest();
             expect(element.html()).toContain("Hello Jonny!!!");
