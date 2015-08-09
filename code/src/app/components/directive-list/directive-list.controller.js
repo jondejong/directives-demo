@@ -41,9 +41,9 @@
                 url: "#/helloa"
             },
             {
-                name: "Other 6",
-                description: "some Other thing",
-                url: "#"
+                name: "Dog List",
+                description: "Deferred data load through a service and controller",
+                url: "#/dogs"
             },
             {
                 name: "Other 7",

@@ -46,6 +46,10 @@
                 url: 'helloa',
                 templateUrl: 'app/components/helloAttr/helloAttr.container.html'
             })
+            .state('home.dogs', {
+                url: 'dogs',
+                templateUrl: 'app/components/dog/dogList.container.html'
+            })
             .state('home.deferred', {
                 url: 'deferred',
                 templateUrl: 'app/components/deferred/deferred.container.html'
