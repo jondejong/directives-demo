@@ -15,15 +15,20 @@
 
             var getDogs = function () {
 
-                var promise = $q.promise();
+                var defer = $q.defer();
+                var promise = defer.promise;
 
                 $timeout(function () {
-                    promise.resolve(dogs);
+                    defer.resolve(dogs);
                 }, 2000);
 
                 return promise;
-            }
+            };
 
+            //public api
+            return {
+                getDogs: getDogs
+            };
 
         });
     

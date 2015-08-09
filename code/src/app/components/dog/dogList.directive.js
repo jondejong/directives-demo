@@ -10,12 +10,9 @@
                 controller: DogListController,
                 controllerAs: 'dlc',
                 link: function (scope, el, attrs, dlc) {
-                    scope.loading = true;
-                    scope.$watch('dlc.dogs', function () {
-                        if(dlc.dogs.length > 0) {
-                            scope.dogList = dogs;
-                        }
-                    });
+                    // Controller is injected in here for
+                    // use in the link function.
+                    // ie, can access dlc.dogs
                 }
             };
         });
