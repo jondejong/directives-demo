@@ -35,11 +35,15 @@
           secondDiv = angular.element(divs[1]);
         };
 
+        var isHidden = function(el) {
+          return el.hasClass('ng-hide');
+        };
+
         it('Sets up a loading screen', function () {
             parseDirective();
 
-            expect(firstDiv.hasClass('ng-hide')).toBeFalsy();
-            expect(secondDiv.hasClass('ng-hide')).toBeTruthy();
+            expect(isHidden(firstDiv)).toBeFalsy();
+            expect(isHidden(secondDiv)).toBeTruthy();
         });
 
         it('Asks the service for dogs', function () {
@@ -59,8 +63,12 @@
           defer.resolve(dogs);
           $rootScope.$apply();
 
-          expect(firstDiv.hasClass('ng-hide')).toBeTruthy();
-          expect(secondDiv.hasClass('ng-hide')).toBeFalsy();
+          expect(isHidden(firstDiv)).toBeTruthy();
+          expect(isHidden(secondDiv)).toBeFalsy();
+
+          // We should have added two tiles
+          var tiles = secondDiv.find('md-grid-tile');
+          expect(tiles.length).toBe(2);
         });
 
     });
