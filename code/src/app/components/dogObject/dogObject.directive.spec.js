@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  fdescribe('directive:dogObject', function () {
+  describe('directive:dogObject', function () {
 
     var $compile, $rootScope, element, scope, dogs,
       div;
@@ -35,7 +35,7 @@
       expect(isHidden(div)).toBeTruthy();
     });
 
-    fit('List the dogs when the populate', function () {
+    it('List the dogs when the populate', function () {
       parseDirective();
       scope.data.dogs = dogs;
       scope.$digest();
