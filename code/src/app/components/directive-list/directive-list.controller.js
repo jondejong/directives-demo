@@ -22,8 +22,13 @@
             },
             {
                 name: "Hello Person",
-                description: "Modify some data with scope",
+                description: "Grab data from an attribute",
                 url: "#/hellop"
+            },
+            {
+              name: "Hello Person Scope",
+              description: "Grab string data from scope",
+              url: "#/hellops"
             },
             {
                 name: "Hello Scope",

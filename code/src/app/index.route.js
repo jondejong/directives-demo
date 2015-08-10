@@ -32,6 +32,10 @@
                 url: 'hellop',
                 templateUrl: 'app/components/helloPerson/helloPerson.container.html'
             })
+            .state('home.hellops', {
+              url: 'hellops',
+              templateUrl: 'app/components/helloPersonScope/helloPersonScope.container.html'
+            })
             .state('home.hellos', {
                 url: 'hellos',
                 templateUrl: 'app/components/helloScope/helloScope.container.html',
