@@ -2,4 +2,5 @@
 <md-container>
   <md-button ng-click="ctrl.fetch()">Fetch Dogs</md-button>
 </md-container>
-<dog-object data="data"></dog-object>
+<div ng-show="ctrl.loading">Loading <span class="fa fa-spinner fa-spin"></span> </div>
+<dog-object data="ctrl.data"></dog-object>

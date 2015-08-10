@@ -1,11 +1,10 @@
-<div ng-show="dlc.dogs.length == 0">Loading <span class="fa fa-spinner fa-spin"></span> </div>
-<div ng-show="dlc.dogs.length > 0">
+<div ng-show="data.dogs.length > 0">
     <md-content>
         <md-grid-list
                 md-cols-gt-md="3" md-cols-sm="1" md-cols-md="2"
                 md-row-height="2:1"
                 md-gutter="4px">
-            <md-grid-tile ng-repeat="dog in dlc.dogs">
+            <md-grid-tile ng-repeat="dog in data.dogs">
                 <md-grid-tile-header>
                     {{dog.name}}
                 </md-grid-tile-header>

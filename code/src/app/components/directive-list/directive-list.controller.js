@@ -1,61 +1,66 @@
 (function () {
-    'use strict';
+  'use strict';
 
-    angular
-        .module('playground')
-        .controller('DirectiveListController', DirectiveListController);
+  angular
+    .module('playground')
+    .controller('DirectiveListController', DirectiveListController);
 
-    /** @ngInject */
-    function DirectiveListController() {
-        var self = this;
+  /** @ngInject */
+  function DirectiveListController() {
+    var self = this;
 
-        self.directives = [
-            {
-                name: "Hello World",
-                description: "The simplest directive. Put stuff on the page.",
-                url: "#/hellow"
-            },
-            {
-                name: "Hello World Template",
-                description: "Put stuff on the page, but from a template",
-                url: "#/hellowt"
-            },
-            {
-                name: "Hello Person",
-                description: "Grab data from an attribute",
-                url: "#/hellop"
-            },
-            {
-              name: "Hello Person Scope",
-              description: "Grab string data from scope",
-              url: "#/hellops"
-            },
-            {
-                name: "Hello Scope",
-                description: "Scope some object from a controller",
-                url: "#/hellos"
-            },
-            {
-                name: "Hello Who?",
-                description: "Simple interaction with the directive",
-                url: "#/hellowho"
-            },
-            {
-                name: "Hello Attribute",
-                description: "A directive that can be and element or an attribute",
-                url: "#/helloa"
-            },
-            {
-                name: "Dog List",
-                description: "Deferred data load through a service and controller",
-                url: "#/dogs"
-            },
-            {
-                name: "Other 7",
-                description: "some Other thing",
-                url: "#"
-            }
-        ];
+    self.directives = [
+      {
+        name: "Hello World",
+        description: "The simplest directive. Put stuff on the page.",
+        url: "#/hellow"
+      },
+      {
+        name: "Hello World Template",
+        description: "Put stuff on the page, but from a template",
+        url: "#/hellowt"
+      },
+      {
+        name: "Hello Person",
+        description: "Grab data from an attribute",
+        url: "#/hellop"
+      },
+      {
+        name: "Hello Person Scope",
+        description: "Grab string data from scope",
+        url: "#/hellops"
+      },
+      {
+        name: "Hello Scope",
+        description: "Scope some object from a controller",
+        url: "#/hellos"
+      },
+      {
+        name: "Hello Who?",
+        description: "Simple interaction with the directive",
+        url: "#/hellowho"
+      },
+      {
+        name: "Hello Attribute",
+        description: "A directive that can be and element or an attribute",
+        url: "#/helloa"
+      },
+      {
+        name: "Dog List",
+        description: "Deferred data load through a service and controller",
+        url: "#/dogs"
+      },
+      {
+        name: "Dog List -- Object",
+        description: "Deferred data load through a service and controller. This time with a 2-way bound object",
+        url: "#/dogso"
+      },
+      {
+        name: "Other 7",
+        description: "some Other thing",
+        url: "#"
+      }
+    ];
 
-    }
+  }
 })();

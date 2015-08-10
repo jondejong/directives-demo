@@ -10,10 +10,9 @@
         },
         restrict: 'E',
         templateUrl: 'app/components/dogObject/dogObject.template.html',
-        link: function (scope, el, attrs, dlc) {
-          // Controller is injected in here for
-          // use in the link function.
-          // ie, can access dlc.dogs
+        link: function (scope, el, attrs) {
+          console.log("dog object with scope", scope)
+          console.log("dog object with data", scope.data)
         }
       };
     });
