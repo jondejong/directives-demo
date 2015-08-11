@@ -7,7 +7,7 @@
     } else {
       return findFadingParent(element.parent());
     }
-  }
+  };
 
   angular
       .module('playground')
@@ -22,7 +22,8 @@
 
             scope.$watch('fadeOut', function (value) {
               if (value) {
-                findFadingParent(element).addClass('fade');
+                var parent = findFadingParent(element);
+                parent.addClass('fade');
                 $timeout(scope.callback, 1050);
               }
             });

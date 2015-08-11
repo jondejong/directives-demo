@@ -18,7 +18,7 @@
       mockPromise = {
         then: function () {
         }
-      }
+      };
       DogService.getDogs = function () {
         return mockPromise;
       };
@@ -26,7 +26,7 @@
       dogs = [
         {name: "Bear", age: "3", breed: "Collie"},
         {name: "Snoop", age: "4", breed: "Puggle"}
-      ]
+      ];
     }));
 
     var parseDirective = function () {
