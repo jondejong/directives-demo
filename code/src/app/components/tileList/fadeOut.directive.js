@@ -19,6 +19,7 @@
             callback: '&'
           },
           link: function (scope, element) {
+            scope.callback();
 
             scope.$watch('fadeOut', function (value) {
               if (value) {

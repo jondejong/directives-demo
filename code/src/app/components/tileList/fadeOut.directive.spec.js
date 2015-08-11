@@ -15,7 +15,7 @@
       scope = $rootScope.$new();
 
       var html = "<div class='fade-me'>" +
-          "<div fade-out='trigger' callback='postFade'>Delete Div</div>" +
+          "<div fade-out='trigger' callback='postFade()'>Delete Div</div>" +
           "</div>"
 
       scope.trigger = false;
@@ -34,6 +34,16 @@
       scope.$digest();
       expect(element.hasClass('fade')).toBeTruthy();
     });
+
+    fit('should execute the callback when the fade is done', function () {
+      spyOn(scope, 'postFade');
+      scope.trigger = true;
+      scope.$digest();
+      $timeout.flush();
+
+      expect(scope.postFade).toHaveBeenCalled();
+    });
+
 
   });
 })();

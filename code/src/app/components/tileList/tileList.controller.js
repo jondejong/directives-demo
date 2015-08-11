@@ -33,8 +33,6 @@
       };
     });
 
-    //console.log('tiles', self.tiles)
-
     self.deleteTile = function (tile) {
       tile.deleted = true;
     };
