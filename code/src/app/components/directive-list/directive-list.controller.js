@@ -56,9 +56,9 @@
         url: "#/dogso"
       },
       {
-        name: "Other 7",
-        description: "some Other thing",
-        url: "#"
+        name: "Delete Some Tiles",
+        description: "Playing with the element with and attribute diretive",
+        url: "#/tiles"
       }
     ];
 
