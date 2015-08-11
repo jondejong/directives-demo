@@ -1,19 +1,19 @@
 (function () {
-    'use strict';
+  'use strict';
 
-    angular
-        .module('playground')
-        .controller('HelloScopeController', HelloScopeController);
+  angular
+      .module('playground')
+      .controller('HelloScopeController', HelloScopeController);
 
-    /** @ngInject */
-    function HelloScopeController() {
-        var self = this;
+  /** @ngInject */
+  function HelloScopeController() {
+    var self = this;
 
-        self.person = {
-            firstName: "Arya",
-            lastName: "Stark"
-        };
+    self.person = {
+      firstName: "Arya",
+      lastName: "Stark"
+    };
 
-        return self;
-    }
+    return self;
+  }
 })();

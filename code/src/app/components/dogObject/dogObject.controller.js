@@ -2,8 +2,8 @@
   'use strict';
 
   angular
-    .module('playground')
-    .controller('DogObjectController', DogObjectController);
+      .module('playground')
+      .controller('DogObjectController', DogObjectController);
 
   /** @ngInject */
   function DogObjectController(DogService) {
@@ -11,7 +11,7 @@
 
     self.loading = false;
     self.data = {};
-    self.fetch = function() {
+    self.fetch = function () {
       self.loading = true;
       DogService.getDogs().then(function (dogs) {
         self.loading = false;

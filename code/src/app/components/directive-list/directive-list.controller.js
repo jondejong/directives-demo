@@ -2,8 +2,8 @@
   'use strict';
 
   angular
-    .module('playground')
-    .controller('DirectiveListController', DirectiveListController);
+      .module('playground')
+      .controller('DirectiveListController', DirectiveListController);
 
   /** @ngInject */
   function DirectiveListController() {

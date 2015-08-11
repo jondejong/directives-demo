@@ -4,7 +4,7 @@
   describe('directive:dogObject', function () {
 
     var $compile, $rootScope, element, scope, dogs,
-      div;
+        div;
 
     beforeEach(module('playground'));
 

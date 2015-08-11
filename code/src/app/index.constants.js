@@ -1,10 +1,10 @@
 /* global malarkey:false, toastr:false, moment:false */
-(function() {
+(function () {
   'use strict';
 
   angular
-    .module('playground')
-    .constant('malarkey', malarkey)
-    .constant('toastr', toastr)
-    .constant('moment', moment);
+      .module('playground')
+      .constant('malarkey', malarkey)
+      .constant('toastr', toastr)
+      .constant('moment', moment);
 })();

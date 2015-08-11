@@ -1,9 +1,9 @@
-(function() {
+(function () {
   'use strict';
 
   angular
-    .module('playground')
-    .run(runBlock);
+      .module('playground')
+      .run(runBlock);
 
   /** @ngInject */
   function runBlock($log) {
