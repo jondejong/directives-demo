@@ -40,7 +40,6 @@
     };
 
     self.doDelete = function(tile) {
-      console.log('doing the delete');
       _.remove(self.tiles, tile);
     };
 
