@@ -36,8 +36,12 @@
     //console.log('tiles', self.tiles)
 
     self.deleteTile = function (tile) {
-      console.log("delete me", tile);
       tile.deleted = true;
+    };
+
+    self.doDelete = function(tile) {
+      console.log('doing the delete');
+      _.remove(self.tiles, tile);
     };
 
     return self;

@@ -10,16 +10,8 @@
   opacity: 0;
   transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
-  -webkit-transition: opacity 1 ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
 }
-
-.jon {
-  background-color: #000066;
-}
-
-//.fade:hover {
-//  opacity: 0.5;
-//}
 
 html {
   font-family: 'Roboto Slab', serif;
@@ -46,19 +38,6 @@ html {
 
 md-toolbar.md-default-theme {
   background-color: black;
-}
-
-section.jumbotron {
-  margin-bottom: 30px;
-  padding: 1px 30px;
-  background-color: #5aadbb;
-  text-align: center;
-
-  color: white;
-
-  h1 {
-    font-size: 3em;
-  }
 }
 
 /**
