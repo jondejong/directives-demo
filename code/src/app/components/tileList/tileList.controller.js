@@ -6,7 +6,7 @@
       .controller('TileListController', TileListController);
 
   /** @ngInject */
-  function TileListController(_) {
+  function TileListController() {
     var self = this;
 
     self.loading = false;

@@ -64,7 +64,7 @@
           url: 'tiles',
           templateUrl: 'app/components/tileList/tileList.html',
           controller: 'TileListController',
-          controllerAs: 'tls'
+          controllerAs: 'tlc'
         });
 
     $urlRouterProvider.otherwise('/list');
