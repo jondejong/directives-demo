@@ -13,6 +13,15 @@
   -webkit-transition: opacity 1s ease-in-out;
 }
 
+.content {
+  min-height: 400px;
+}
+
+.jdj-draggable {
+  cursor: pointer;
+  position: relative;
+}
+
 html {
   font-family: 'Roboto Slab', serif;
 }
@@ -39,6 +48,10 @@ html {
 md-toolbar.md-default-theme {
   background-color: black;
 }
+
+//md-grid-tile {
+//  border: 1px solid #4d90fe;
+//}
 
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject

@@ -65,7 +65,14 @@
           templateUrl: 'app/components/tileList/tileList.html',
           controller: 'TileListController',
           controllerAs: 'tlc'
+        })
+        .state('home.drag', {
+          url: 'drag',
+          templateUrl: 'app/components/draggable/draggable.container.html',
+          controller: 'DraggableController',
+          controllerAs: 'ctrl'
         });
+
 
     $urlRouterProvider.otherwise('/list');
   }

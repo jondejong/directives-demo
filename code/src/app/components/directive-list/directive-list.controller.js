@@ -59,6 +59,11 @@
         name: "Delete Some Tiles",
         description: "Playing with the element with an attribute directive, and calling back to the controller",
         url: "#/tiles"
+      },
+      {
+        name: "Drag some tings",
+        description: "describe me",
+        url: "#/drag"
       }
     ];
 
