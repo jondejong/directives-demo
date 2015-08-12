@@ -62,7 +62,7 @@
       },
       {
         name: "Drag some tings",
-        description: "describe me",
+        description: "Handle events with an element",
         url: "#/drag"
       }
     ];
