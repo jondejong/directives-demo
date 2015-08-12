@@ -68,7 +68,7 @@
       {
         name: "List Of Tings",
         description: "Example of transclusion",
-        url: "#/drag"
+        url: "#/things"
       }
     ];
 

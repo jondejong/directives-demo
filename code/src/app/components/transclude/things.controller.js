@@ -3,12 +3,17 @@
 
   angular
       .module('playground')
-      .controller('HeaderController', HeaderController);
+      .controller('ThingController', ThingController);
 
   /** @ngInject */
-  function HeaderController() {
+  function ThingController() {
     var self = this;
-    self.title = 'Change Me';
+    self.things = [
+      {name: 'Awesomebot', description: 'Awesome bot'},
+      {name: 'Horribot', description: 'Terrible, no good, very bad bot'},
+      {name: 'Toaster', description: 'Makes bread hot'},
+      {name: 'Tesla', description: 'Goes fast'}
+    ];
     return self;
   }
 })();

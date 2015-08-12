@@ -17,6 +17,18 @@
   min-height: 400px;
 }
 
+.list-container {
+  background-color: #b2d1ff;
+  border: 2px solid #0077b3;
+  padding: 25px;
+  margin: 25px;
+}
+
+.list-data {
+  background-color: #fff3f3;
+  //border: 1px solid #0077b3;
+}
+
 .jdj-draggable {
   cursor: pointer;
   position: relative;

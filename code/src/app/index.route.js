@@ -71,6 +71,12 @@
           templateUrl: 'app/components/draggable/draggable.container.html',
           controller: 'DraggableController',
           controllerAs: 'ctrl'
+        })
+        .state('home.things', {
+          url: 'things',
+          templateUrl: 'app/components/transclude/things.html',
+          controller: 'ThingController',
+          controllerAs: 'ctrl'
         });
 
 
