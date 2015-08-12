@@ -35,7 +35,7 @@
       expect(element.hasClass('fade')).toBeTruthy();
     });
 
-    fit('should execute the callback when the fade is done', function () {
+    it('should execute the callback when the fade is done', function () {
       spyOn(scope, 'postFade');
       scope.trigger = true;
       scope.$digest();

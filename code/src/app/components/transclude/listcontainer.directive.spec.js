@@ -13,7 +13,7 @@
     }));
 
 
-    fit('Replaces the HTML content correctly', function () {
+    it('Replaces the HTML content correctly', function () {
       var html =
           '<list-container>' +
           '<div>This Should Stay</div>' +
