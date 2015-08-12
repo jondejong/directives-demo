@@ -6,7 +6,6 @@
       .directive('draggable', function ($document) {
         return {
           restrict: 'AE',
-          //scope: {},
           link: function (scope, element, attr) {
             var startX = 0, startY = 0, x = 0, y = 0;
 
@@ -21,7 +20,7 @@
               $document.on('mouseup', mouseup);
             });
 
-            function mousemove(event) {
+            function mousemove (event) {
               y = event.pageY - startY;
               x = event.pageX - startX;
               element.css({
