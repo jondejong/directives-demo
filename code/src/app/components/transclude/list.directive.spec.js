@@ -19,9 +19,7 @@
       ];
       element = $compile(html)(scope);
       scope.$digest();
-
     }));
-
 
     it('Should add the outer div', function () {
       var div = angular.element(element.find('div'));
