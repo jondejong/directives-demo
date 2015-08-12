@@ -1,8 +1,6 @@
 (function () {
   'use strict';
 
-
-  //TODO: TEST THIS!
   angular
       .module('playground')
       .directive('draggable', function ($document) {
