@@ -2,6 +2,7 @@
   'use strict';
 
 
+  //TODO: TEST THIS!
   angular
       .module('playground')
       .directive('draggable', function ($document) {
@@ -10,13 +11,6 @@
           //scope: {},
           link: function (scope, element, attr) {
             var startX = 0, startY = 0, x = 0, y = 0;
-
-            //element.css({
-            //  position: 'relative',
-            //  border: '1px solid red',
-            //  backgroundColor: 'lightgrey',
-            //  cursor: 'pointer'
-            //});
 
             element.addClass('jdj-draggable');
 
