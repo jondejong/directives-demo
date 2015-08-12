@@ -3,34 +3,37 @@
 
   describe('directive:listcontainer', function () {
 
-    var $compile, $rootScope;
+    var $compile, $rootScope, element, outerdiv;
 
     beforeEach(module('playground'));
 
     beforeEach(inject(function (_$compile_, _$rootScope_) {
       $compile = _$compile_;
       $rootScope = _$rootScope_;
-    }));
 
-
-    it('Replaces the HTML content correctly', function () {
       var html =
           '<list-container>' +
           '<div>This Should Stay</div>' +
           '</list-container>';
       var scope = $rootScope.$new();
-      var element = $compile(html)(scope);
+      element = $compile(html)(scope);
       scope.$digest();
 
-      // Should add the class to the outter div
-      var outterdiv = angular.element(element.find('div'));
-      expect(outterdiv.hasClass('list-container')).toBeTruthy();
+      outerdiv = angular.element(element.find('div'));
+    }));
 
+
+    it('Should add the class to the outer div', function () {
+      expect(outerdiv.hasClass('list-container')).toBeTruthy();
+    });
+
+    it('Should add the header', function () {
       // Should add the header
-      var headerdiv = angular.element(outterdiv.find('div'));
+      var headerdiv = angular.element(outerdiv.find('div'));
       expect(headerdiv.html()).toContain('<strong>Here is a list of some things</strong>');
+    });
 
-      // Should keep the transcluded content
+    it('Should keep the transcluded content', function () {
       var transclude = angular.element(element.find('ng-transclude'));
       expect(transclude.html()).toContain('This Should Stay');
 
