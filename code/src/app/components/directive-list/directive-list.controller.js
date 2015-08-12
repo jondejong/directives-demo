@@ -61,8 +61,13 @@
         url: "#/tiles"
       },
       {
-        name: "Drag some tings",
+        name: "Drag Something",
         description: "Handle events with an element",
+        url: "#/drag"
+      },
+      {
+        name: "List Of Tings",
+        description: "Example of transclusion",
         url: "#/drag"
       }
     ];
