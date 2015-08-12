@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  describe('directive:helloWorld', function () {
+  describe('directive:listcontainer', function () {
 
     var $compile, $rootScope;
 
@@ -19,10 +19,6 @@
           '<div>This Should Stay</div>' +
           '</list-container>';
       var scope = $rootScope.$new();
-      scope.bots = [
-        {name: 'bot 1', description: 'awesome'},
-        {name: 'bot 2', description: 'ok'}
-      ];
       var element = $compile(html)(scope);
       scope.$digest();
 
