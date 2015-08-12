@@ -7,9 +7,7 @@
         return {
           restrict: 'E',
           transclude: true,
-          templateUrl: 'app/components/transclude/listcontainer.template.html',
-          link: function (scope, el, attrs) {
-          }
+          templateUrl: 'app/components/transclude/listcontainer.template.html'
         };
       });
 

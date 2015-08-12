@@ -6,13 +6,11 @@
       .directive('list', function () {
         return {
           scope: {
-            things: "="
+            things: "=",
+            typeName: '@'
           },
           restrict: 'E',
-          templateUrl: 'app/components/transclude/list.template.html',
-          link: function (scope, el, attrs) {
-            console.log("creating list of things, ", scope.things);
-          }
+          templateUrl: 'app/components/transclude/list.template.html'
         };
       });
 
