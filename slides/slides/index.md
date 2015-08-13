@@ -6,4 +6,4 @@ Chief Technologist @objectpartners
 
 @jondejong
 
-[github.com/jondejong/mean-talk](https://github.com/jondejong/directives-demo)
+[github.com/jondejong/directives-demo](https://github.com/jondejong/directives-demo)
