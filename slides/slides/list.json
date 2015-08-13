@@ -17,6 +17,7 @@
     ],
     [
       "parts/parts.md",
+      "parts/restrict.md",
       "parts/scope.md",
       "parts/link.md",
       "parts/template.md",
