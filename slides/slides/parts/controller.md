@@ -1,5 +1,7 @@
 ### Controller
-      
+           
+Directive
+
       controller: DogListController,
       controllerAs: 'dlc',
       link: function (scope, el, attrs, dlc) {
@@ -8,6 +10,8 @@
         // ie, can access dlc.dogs
       }
     
+Controller
+
       /** @ngInject */
       function DogListController(DogService) {
         var dlc = this;
