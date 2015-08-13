@@ -19,6 +19,8 @@
       "parts/parts.md",
       "parts/restrict.md",
       "parts/scope.md",
+      "parts/at.md",
+      "parts/equals.md",
       "parts/link.md",
       "parts/template.md",
       "parts/templateurl.md",
