@@ -1,4 +1,4 @@
-### @
+### =
 
 Directive 
 
@@ -9,7 +9,7 @@ Directive
       
 HTML
 
-    <hello name="{{ctrl.user}}"></hello>
+    <hello user="{{ctrl.user}}"></hello>
     
 Output
 
