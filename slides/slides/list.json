@@ -17,14 +17,14 @@
     ],
     [
       "parts/parts.md",
+      "parts/template.md",
+      "parts/templateurl.md",
       "parts/restrict.md",
       "parts/scope.md",
       "parts/at.md",
       "parts/equals.md",
       "parts/amp.md",
       "parts/link.md",
-      "parts/template.md",
-      "parts/templateurl.md",
       "parts/controller.md",
       "parts/transclude.md"
     ],
