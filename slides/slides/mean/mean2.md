@@ -1,4 +1,0 @@
-## MongoDB
-## Express
-## AngularJS
-## NodeJS

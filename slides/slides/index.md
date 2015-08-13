@@ -1,9 +1,9 @@
 
-# Getting Mean
-## Introduction to the MEAN Stack
+## Directives
+### Building Customer Directives in Angular 1.X
 ### Jon DeJong
 Chief Technologist @objectpartners
 
 @jondejong
 
-[github.com/jondejong/mean-talk](https://github.com/jondejong/mean-talk)
+[github.com/jondejong/mean-talk](https://github.com/jondejong/directives-demo)

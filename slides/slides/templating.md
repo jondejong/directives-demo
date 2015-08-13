@@ -1,4 +1,0 @@
-## Templating Engines
-Jade
-
-
