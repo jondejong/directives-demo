@@ -6,13 +6,12 @@
       .directive('draggable', function ($document) {
         return {
           restrict: 'AE',
-          link: function (scope, element, attr) {
+          link: function (scope, element) {
             var startX = 0, startY = 0, x = 0, y = 0;
 
             element.addClass('jdj-draggable');
 
             element.on('mousedown', function(event) {
-              // Prevent default dragging of selected content
               event.preventDefault();
               startX = event.pageX - x;
               startY = event.pageY - y;

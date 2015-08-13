@@ -29,7 +29,7 @@
 
     it('Should transclude in the thing', function () {
       var transclude = angular.element(element.find('ng-transclude'));
-      expect(transclude.html()).toContain('bot 1: awesome')
+      expect(transclude.html()).toContain('bot 1: awesome');
     });
 
   });

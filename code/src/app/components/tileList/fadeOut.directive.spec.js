@@ -16,7 +16,7 @@
 
       var html = "<div class='fade-me'>" +
           "<div fade-out='trigger' callback='postFade()'>Delete Div</div>" +
-          "</div>"
+          "</div>";
 
       scope.trigger = false;
       scope.postFade = function () {};

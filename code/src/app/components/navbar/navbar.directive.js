@@ -21,7 +21,7 @@
     return directive;
 
     /** @ngInject */
-    function NavbarController(moment) {
+    function NavbarController() {
     }
   }
 

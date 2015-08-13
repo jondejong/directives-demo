@@ -9,9 +9,7 @@
             data: '='
           },
           restrict: 'E',
-          templateUrl: 'app/components/dogObject/dogObject.template.html',
-          link: function (scope, el, attrs) {
-          }
+          templateUrl: 'app/components/dogObject/dogObject.template.html'
         };
       });
 })();

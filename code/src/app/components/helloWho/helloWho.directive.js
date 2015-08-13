@@ -23,7 +23,7 @@
               scope.person.firstName = '';
               scope.person.lastName = '';
               scope.speaking = false;
-            }
+            };
           }
         };
       });

@@ -12,7 +12,7 @@
       var html = '<hello-who></hello-who>';
       var element = $compile(html)(_$rootScope_);
       _$rootScope_.$digest();
-      scope = element.isolateScope()
+      scope = element.isolateScope();
     }));
 
     it('should set speaking to false', function () {

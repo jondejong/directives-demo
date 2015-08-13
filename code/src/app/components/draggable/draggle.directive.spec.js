@@ -40,18 +40,28 @@
       expect($document.on.calls.argsFor(1)).toEqual(['mouseup', jasmine.any(Function)]);
     });
 
-    fit('should handle a mouse move', function () {
+    it('should handle a mouse move', function () {
       element.trigger(event);
 
       var moveEvent = {
         type: 'mousemove',
         pageX: 20,
-        pageY: 30
+        pageY: 40
       };
 
       $document.trigger(moveEvent);
-      expect(element.attr('style').indexOf('top: 10px') > -1).toBeTruthy();
+      expect(element.attr('style').indexOf('top: 20px') > -1).toBeTruthy();
       expect(element.attr('style').indexOf('left: 10px') > -1).toBeTruthy();
+    });
+
+    it('should support moouseup', function() {
+      element.trigger(event);
+      spyOn($document, 'off');
+
+      $document.trigger('mouseup');
+
+      expect($document.off.calls.argsFor(0)).toEqual(['mousemove', jasmine.any(Function)]);
+      expect($document.off.calls.argsFor(1)).toEqual(['mouseup', jasmine.any(Function)]);
     });
   });
 })();
