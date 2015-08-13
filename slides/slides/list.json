@@ -10,6 +10,11 @@
       "angular/angular5.md"
     ],
     "controllers.md",
+    [
+      "directives/js.md",
+      "directives/template.md",
+      "directives/output.md"
+    ],
     "code.md",
     "outtahere.md"
 ]
