@@ -9,5 +9,7 @@
       "angular/angular4.md",
       "angular/angular5.md"
     ],
+    "controllers.md",
+    "code.md",
     "outtahere.md"
 ]
