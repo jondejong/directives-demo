@@ -1,0 +1,76 @@
+{
+  "name": "gulp-server-livereload",
+  "version": "1.4.0",
+  "description": "Gulp plugin to run a local webserver with livereload enabled via socket.io",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiddentao/gulp-server-livereload.git"
+  },
+  "keywords": [
+    "gulpplugin",
+    "webserver",
+    "connect",
+    "livereload",
+    "socket",
+    "websocket"
+  ],
+  "bin": {
+    "livereload": "./bin/livereload.js"
+  },
+  "author": {
+    "name": "Ramesh Nair",
+    "email": "ram@hiddentao.com",
+    "url": "http://hiddentao.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hiddentao/gulp-server-livereload/issues"
+  },
+  "homepage": "https://github.com/hiddentao/gulp-server-livereload",
+  "devDependencies": {
+    "mocha": "~1.20.1",
+    "supertest": "~0.13.0"
+  },
+  "dependencies": {
+    "commander": "^2.8.1",
+    "connect": "~3.1.1",
+    "connect-inject": "~0.3.2",
+    "gulp-util": "~2.2.19",
+    "multiline": "~1.0.2",
+    "node-watch": "^0.3.4",
+    "node.extend": "~1.0.10",
+    "open": "~0.0.5",
+    "serve-index": "~1.1.4",
+    "serve-static": "~1.5.2",
+    "socket.io": "~1.0.6",
+    "through2": "~0.5.1",
+    "vinyl-fs": "^1.0.0"
+  },
+  "gitHead": "8c0bc5b8c62917827e94eeeb05f150ca76ec1c5e",
+  "_id": "gulp-server-livereload@1.4.0",
+  "_shasum": "28501f62401b17253edfedc6243f18b8d9959daa",
+  "_from": "gulp-server-livereload@>=1.4.0 <2.0.0",
+  "_npmVersion": "2.7.6",
+  "_nodeVersion": "0.12.0",
+  "_npmUser": {
+    "name": "hiddentao",
+    "email": "ram@hiddentao.com"
+  },
+  "dist": {
+    "shasum": "28501f62401b17253edfedc6243f18b8d9959daa",
+    "tarball": "http://registry.npmjs.org/gulp-server-livereload/-/gulp-server-livereload-1.4.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "hiddentao",
+      "email": "ram@hiddentao.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/gulp-server-livereload/-/gulp-server-livereload-1.4.0.tgz",
+  "readme": "ERROR: No README data found!"
+}
