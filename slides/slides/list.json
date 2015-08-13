@@ -15,6 +15,15 @@
       "directives/template.md",
       "directives/output.md"
     ],
+    [
+      "parts/parts.md",
+      "parts/scope.md",
+      "parts/link.md",
+      "parts/template.md",
+      "parts/templateurl.md",
+      "parts/controller.md",
+      "parts/transclude.md"
+    ],
     "code.md",
     "outtahere.md"
 ]
